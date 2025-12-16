@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Square Finder App By Harsha Patil</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+</div>
+<br/>
+       <h1>Result Page</h1>
+</br><br/><br/><br/>
+<h4 id="msg"></h4>
+
+<script>
+            let msg=document.getElementById("msg");
+            let res=localStorage.getItem("res");
+            if(res === null) {
+                             alert("acting smart... chal jaa ghar pe");
+                             window.location.href="index.html";
+                             } else {
+                                          msg.innerHTML = res;
+                                           localStorage.removeItem("res"); 
+                                        }
+</script>
+</body>
+</html>
+
